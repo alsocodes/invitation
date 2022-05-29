@@ -1,0 +1,91 @@
+.cover {
+    /* background-image: url('/assets/couple-cover-2.jpg'); */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: azure;
+    z-index: 10;
+}
+
+.cover_decor_top {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+}
+
+.cover_decor_bottom {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    width: 515px;
+    height: 200px;
+    margin: auto;
+}
+
+.the_wedding_of {
+    text-align: center;
+    color: #683329;
+}
+.couple_name {
+    font-size: 4.5em;
+    /* font-family: 'Pinyon Script', cursive; */
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    color: #683329;
+}
+
+.nikah_date {
+    font-size: 1.6em;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    color: #683329;
+}
+
+.btn_open {
+    background-color: #a8695d;
+    color: #fff;
+}
+
+.btn_open:hover {
+    color: #fff;
+    background-color: #683329;
+}
+
+.invited_name {
+    font-weight: 600;
+    font-size: 1.3em;
+    margin: 0.5em auto 0em;
+}
+
+@media screen and (max-width: 768px) {
+    .cover_decor_top {
+        width: 120vw;
+        height: 50vw;
+        top: -7vw;
+        left: -12vw;
+    }
+
+    .cover {
+        height: calc(100vh - 60px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cover_decor_bottom {
+        width: 90%;
+        height: 26vw;
+        bottom: -45px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .cover_decor_bottom {
+        width: 100%;
+        height: 26vw;
+        bottom: -30px;
+    }
+}

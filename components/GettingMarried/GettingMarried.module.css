@@ -1,0 +1,97 @@
+.section_title {
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+    color: #683329;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.getting_merried {
+    padding-top: 6em;
+    padding-bottom: 8em;
+    position: relative;
+}
+
+.img_decor_top {
+    position: absolute;
+    top: -100px;
+    right: -120px;
+    z-index: -1;
+    width: 800px;
+}
+
+.getting_merried_decor_top {
+    background-image: url(/assets/flower-0003.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 800px;
+    min-height: 300px;
+    margin: auto;
+    z-index: -1;
+    background-position-x: 270px;
+    background-position-y: -80px;
+    border: 1px solid #f00;
+    max-width: 100%;
+}
+
+.getting_merried_decor_bottom {
+    position: absolute;
+    left: -100px;
+    bottom: -60px;
+    width: 560px;
+    height: 400px;
+    margin: auto;
+    z-index: -1;
+}
+
+.bride_groom_thumb {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.dan {
+    font-size: 6em;
+    font-family: 'Satisfy', cursive;
+    color: #683329;
+}
+
+.bride_groom_name {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.8em;
+    color: #683329;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+@media screen and (max-width: 680px) {
+    .img_decor_top {
+        max-width: 600px;
+        right: -90px;
+        top: -80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img_decor_top {
+        max-width: 460px;
+        right: -70px;
+        top: -60px;
+    }
+    .getting_merried_decor_bottom {
+        width: 420px;
+        height: 300px;
+        left: -70px;
+    }
+}
