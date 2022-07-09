@@ -32,7 +32,7 @@ const Map = () => {
                         width="100%"
                         height="450"
                         style={{ border: '0' }}
-                        allowFullscreen=""
+                        allowFullScreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
                     />
