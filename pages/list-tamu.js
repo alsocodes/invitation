@@ -40,18 +40,7 @@ const ListTamu = ({ guests }) => {
                     </thead>
                     <tbody>
                         {guests?.map((row) => {
-                            const text = `_Assalamu'alaikum Warahmatullahi Wabarakaatuh_ 
-                            Tanpa mengurangi rasa hormat, izinkan kami mengundang Bapak/Ibu/Saudara/i __thename__  untuk hadir serta memberikan do'a restu pada acara pernikahan kami.
-                            Untuk detail acara, lokasi, dan ucapan bisa klik link dibawah ini:
-                            https://mega-ery.invits.my.id/__theid__
-
-                            Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i __thename__ berkenan hadir.
-
-                            Do'a restu Anda merupakan hadiah terindah bagi kami.
-
-                            Atas kehadiran dan do'a restu yang telah diberikan, kami ucapkan terima kasih.
-
-                            _Wassalamu'alaikum Warahmatullahi Wabarakatuh._`;
+                            const text = `_Assalamu'alaikum Warahmatullahi Wabarakaatuh_\r\n\r\nTanpa mengurangi rasa hormat, izinkan kami mengundang Bapak/Ibu/Saudara/i *__thename__*  untuk hadir serta memberikan do'a restu pada acara pernikahan kami.\r\n\r\nUntuk detail acara, lokasi, dan ucapan bisa klik link dibawah ini:\r\nhttps://mega-ery.invits.my.id/__theid__\r\n\r\nMerupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i *__thename__* berkenan hadir.\r\n\r\nDo'a restu Anda merupakan hadiah terindah bagi kami.\r\n\r\nAtas kehadiran dan do'a restu yang telah diberikan, kami ucapkan terima kasih.\r\n\r\n_Wassalamu'alaikum Warahmatullahi Wabarakatuh._`;
                             const textBody = text.replace(/__thename__/g, row.name).replace(/__theid__/g, row.id);
                             return (
                                 <tr key={row.id}>
@@ -62,8 +51,9 @@ const ListTamu = ({ guests }) => {
                                         {/* {textBody} */}
                                         {row.phone !== '' && (
                                             <a
+                                                rel="noreferrer"
                                                 target="_blank"
-                                                href={`https://wa.me/${row.phone}?text=${textBody}`}
+                                                href={`https://wa.me/${row.phone}?text=${encodeURIComponent(textBody)}`}
                                                 className="btn btn-primary btn-sm"
                                             >
                                                 Whatsapp
