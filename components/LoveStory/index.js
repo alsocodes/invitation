@@ -10,17 +10,17 @@ const LoveStory = () => {
         {
             title: 'Pertama Keteamu',
             content:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                'Pertama kali bertemu pada tahun 2020 saat itu kita masih belum mempunyai perasaan saling suka maupun ketertarikan satu sama lain, setalah saling mengenal kami memutuskan untuk ke jenjang yang lebih serius dengan harapan memenuhi syariat dalam islam .',
         },
         {
             title: 'Melamar dan Bertunangan',
             content:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                'Pada bulan februari 2022 secara resmi kami melakukan resepsi pertunangan yang dihadiri segenap keluarga, dan Alhamulillah niat kami tersebut terlaksana engan sangat baik.',
         },
         {
             title: 'Menentukan Hari Pernikahan',
             content:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                'Pada saat acara lamaran masih berlangsung yang di hadiri segenap keluarga, telah menentukan tanggal pernikahan kita dan telah  sepakati oleh kedua keluarga mempelai pria dan wanita yang akan di adakan pada tanggal 17 juli 2022.',
         },
     ];
 
@@ -86,8 +86,8 @@ const LoveStory = () => {
                         }}
                     />
                     {carouselItemData}
-                    <CarouselControl directionText="Prev" direction="prev" onClickHandler={previousButton} />
-                    <CarouselControl directionText="Next" direction="next" onClickHandler={nextButton} />
+                    {/* <CarouselControl directionText="Prev" direction="prev" onClickHandler={previousButton} />
+                    <CarouselControl directionText="Next" direction="next" onClickHandler={nextButton} /> */}
                 </Carousel>
                 <div className="text-center mb-10" style={{ marginTop: '40px' }} data-aos="fade-up">
                     <p className="p-2">

@@ -66,14 +66,14 @@ const Index = ({ guest }) => {
 };
 
 // This gets called on every request
-export async function getServerSideProps() {
+export async function getServerSideProps({ query }) {
     // // Fetch data from external API
-    // const api_url = process.env.API_URL;
-    // const res = await fetch(`${api_url}/guest`);
-    // const data = await res.json();
+    const api_url = process.env.API_URL;
+    const { one } = query;
+    const res = await fetch(`${api_url}/api/guest/${one}`);
+    const guest = await res.json();
 
-    // // Pass data to the page via props
-    return { props: { guest: { name: '', phone: '', address: '' } } };
+    return { props: { guest: guest } };
 }
 
 export default Index;
