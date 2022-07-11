@@ -38,10 +38,10 @@ const LayoutUndangan = (props) => {
                 ></link>
             </Head>
             <div>{props.children}</div>
-            <div class="container">
-                <div class="text-center text-sm py-2" style={{ fontSize: '0.7rem' }}>
-                    <i class="bi bi-code-slash"></i> Created by{' '}
-                    <a class="adev" href="https://also.my.id">
+            <div className="container">
+                <div className="text-center text-sm py-2" style={{ fontSize: '0.7rem' }}>
+                    <i className="bi bi-code-slash"></i> Created by{' '}
+                    <a className="adev" href="https://also.my.id">
                         alsoProject
                     </a>
                     .
