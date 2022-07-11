@@ -54,7 +54,7 @@ const ListTamu = ({ guests }) => {
                             _Wassalamu'alaikum Warahmatullahi Wabarakatuh._`;
                             const textBody = text.replace(/__thename__/g, row.name).replace(/__theid__/g, row.id);
                             return (
-                                <tr>
+                                <tr key={row.id}>
                                     <td>{row.name}</td>
                                     <td>{row.phone}</td>
                                     <td>{row.address}</td>
