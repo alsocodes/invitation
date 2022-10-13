@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://dev2.smpn33-sby.sch.id",
   "scripts": {
-    "dev": "next dev -p 3003",
+    "dev": "next dev -p 9007",
     "build": "next build",
-    "export": "next export",
-    "start": "next start",
+    "export": "next build && next export",
+    "start": "next start -p 9007",
     "lint": "next lint"
   },
   "dependencies": {

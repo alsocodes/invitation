@@ -6,7 +6,7 @@ const SaveTheDate = () => {
             <div
                 className={styles.save_the_date_decor_top}
                 data-aos="fade-down"
-                date-aos-delay="400"
+                data-aos-delay="400"
                 data-aos-duration="500"
             >
                 <Image alt="decor-bottm-getting-married" src={'/assets/flower-0005.png'} layout="fill" />
@@ -14,7 +14,7 @@ const SaveTheDate = () => {
             <div
                 className={styles.save_the_date_decor_bottom}
                 data-aos="fade-up"
-                date-aos-delay="400"
+                data-aos-delay="400"
                 data-aos-duration="500"
             >
                 <Image alt="decor-bottm-getting-married" src={'/assets/flower-0006.png'} layout="fill" />
